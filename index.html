@@ -492,7 +492,7 @@
 
     /* Content sections */
     .content {
-      padding: 0.5rem 1.5rem 4rem;
+      padding: 0.5rem 1rem 4rem;
       position: relative;
       background: linear-gradient(180deg, var(--ivory) 0%, var(--blush-deep) 100%);
     }
@@ -591,7 +591,7 @@
 
     .wax-seal span {
       font-family: 'Tangerine', cursive;
-      font-size: 1.55rem;
+      font-size: 1rem;
       font-weight: 700;
       line-height: 1;
       letter-spacing: -0.02em;
@@ -686,15 +686,15 @@
     .tl-step strong {
       display: block;
       font-family: 'Playfair Display', serif;
-      font-size: 0.72rem;
+      font-size: 0.62rem;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       color: var(--burgundy);
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.1rem;
     }
 
     .tl-step span {
-      font-size: 0.72rem;
+      font-size: 0.58rem;
       color: var(--charcoal-soft);
       font-style: italic;
     }
@@ -950,7 +950,7 @@
       max-width: 430px;
       margin: 0 auto;
       z-index: 300;
-      background: var(--charcoal);
+      background: linear-gradient(165deg, var(--cream) 0%, var(--ivory) 45%, var(--blush) 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -973,7 +973,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.1rem;
       font-weight: 400;
-      color: var(--gold-light);
+      color: var(--charcoal-soft);
       letter-spacing: 0.06em;
       line-height: 2;
       opacity: 0;
@@ -988,6 +988,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
       font-weight: 700;
+      color: var(--burgundy);
       margin-bottom: 0.5rem;
     }
 
@@ -1000,15 +1001,16 @@
     .finale-dismiss {
       margin-top: 2rem;
       padding: 0.6rem 1.4rem;
-      background: transparent;
+      background: rgba(251, 246, 240, 0.92);
       border: 1px solid var(--gold);
-      color: var(--gold-light);
+      color: var(--burgundy);
       font-family: 'Playfair Display', serif;
       font-size: 0.75rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       cursor: pointer;
       opacity: 0;
+      box-shadow: var(--shadow);
     }
 
     .finale.show .finale-dismiss {
@@ -1051,7 +1053,7 @@
       <svg class="note-off" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><line x1="4" y1="4" x2="20" y2="20"/></svg>
     </button>
     <audio id="bg-music" loop preload="metadata">
-      <source src="assets/Albumaty.Com_amrw_gabr_hbyby_da_-_klh_kaly_ashmana_hw.mp3" type="audio/mpeg" />
+      <source src="assets/sound.mp3" type="audio/mpeg" />
     </audio>
 
     <!-- Invitation -->
@@ -1097,9 +1099,13 @@
         <div class="love-note-wrap">
           <div class="love-note">
             <p>
-              Some love stories begin with fireworks. Ours began with a glance —
-              quiet, certain, and unforgettable. And now, we're ready to say it out loud,
-              in front of everyone we hold dear.
+              Every beautiful thing in my life started when I met you.
+            </p>
+            <p>
+              With every day, every laugh, and every memory, my love for you grew stronger.
+            </p>
+            <p>
+              Today, we're celebrating the beginning of our forever, surrounded by the people we love.
             </p>
             <div class="seal-row">
               <div class="wax-seal" aria-hidden="true"><span>A&amp;A</span></div>
@@ -1114,18 +1120,18 @@
               <div class="tl-dot">
                 <img src="assets/couple.jpg" alt="" />
               </div>
-              <strong>How We Met</strong>
-              <span>A glance that changed everything</span>
+              <strong>We Met</strong>
+              <span>One glance</span>
             </div>
             <div class="tl-step">
               <div class="tl-dot placeholder">💍</div>
-              <strong>The Proposal</strong>
-              <span>When forever became real</span>
+              <strong>The Yes</strong>
+              <span>Forever sealed</span>
             </div>
             <div class="tl-step">
               <div class="tl-dot placeholder">🥂</div>
-              <strong>The Celebration</strong>
-              <span>June 26, 2026</span>
+              <strong>Our Day</strong>
+              <span>Jun 24</span>
             </div>
           </div>
         </div>
@@ -1163,7 +1169,7 @@
             </span>
             <div>
               <strong>When</strong>
-              <p>Thursday, June 26, 2026</p>
+              <p>Wednesday, June 24, 2026</p>
             </div>
           </div>
           <div class="detail-row">
@@ -1181,14 +1187,14 @@
             </span>
             <div>
               <strong>Where</strong>
-              <p>Where our hearts take center stage</p>
+              <p>Bella Dona Wedding Hall</p>
             </div>
           </div>
         </div>
 
         <div class="map-wrap">
           <p class="map-caption">Find us — every road leads to where the heart belongs</p>
-          <a class="map-btn" href="https://maps.app.goo.gl/fkc6gaM9YHJthqnY8" target="_blank" rel="noopener">
+          <a class="map-btn" href="https://maps.app.goo.gl/QLkwLVMTrnr88buk8" target="_blank" rel="noopener">
             View on Map
           </a>
         </div>
@@ -1213,13 +1219,13 @@
     <!-- Finale overlay -->
     <div class="finale" id="finale">
       <p class="finale-names">Ahmed <span class="amp">&</span> Ahlam</p>
-      <p>June 26, 2026<br>The night two stories become one</p>
+      <p>June 24, 2026<br>The night two stories become one</p>
       <button class="finale-dismiss" type="button" id="finale-dismiss">Return to invitation</button>
     </div>
   </div>
 
   <script>
-    const TARGET = new Date('2026-06-26T21:00:00');
+    const TARGET = new Date('2026-06-24T21:00:00');
 
     /* Rose petals */
     const petalsEl = document.getElementById('petals');
